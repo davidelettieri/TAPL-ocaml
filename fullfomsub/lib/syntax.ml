@@ -461,7 +461,7 @@ and printtm_AppTerm outer ctx t = match t with
   | TmIsZero(_,t1) ->
        pr "iszero "; printtm_ATerm false ctx t1
   | TmTimesfloat(_,t1,t2) ->
-       pr "timesfloat "; printtm_ATerm false ctx t2; 
+       pr "timesfloat "; printtm_ATerm false ctx t1; 
        pr " "; printtm_ATerm false ctx t2
   | t -> printtm_PathTerm outer ctx t
 

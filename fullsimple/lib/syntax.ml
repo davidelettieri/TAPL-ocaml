@@ -372,7 +372,7 @@ let rec printtm_Term outer ctx t = match t with
 
 and printtm_AppTerm outer ctx t = match t with
     TmTimesfloat(_,t1,t2) ->
-       pr "timesfloat "; printtm_ATerm false ctx t2; 
+       pr "timesfloat "; printtm_ATerm false ctx t1; 
        pr " "; printtm_ATerm false ctx t2
   | TmApp(fi, t1, t2) ->
       obox0();
